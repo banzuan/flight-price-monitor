@@ -95,8 +95,14 @@ jobs:
 
       - name: Commit data & report
         run: |
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/
-          git diff --staged --quiet || git commit -m "chore: update price data $(date -u '+%Y-%m-%d %H:%M UTC')"
-          git push
+          # 强制添加被 .gitignore 忽略的数据和报告
+          git add -f docs/data/ || true
+          # 无变更则跳过，有变更则提交推送
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update price data $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          else
+            echo "No changes to commit"
+          fi
