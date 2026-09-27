@@ -1,0 +1,158 @@
+{
+  "ok": true,
+  "data": {
+    "query": {
+      "from": {
+        "code": "SHA",
+        "name": "SHA"
+      },
+      "to": {
+        "code": "SHA",
+        "name": "SHA"
+      },
+      "depart_dates": [
+        "2026-10-05"
+      ],
+      "return_dates": [
+        "2026-10-05"
+      ],
+      "platforms": [
+        "qunar",
+        "tongcheng",
+        "tuniu"
+      ],
+      "threshold": 0,
+      "query_time": "2026-09-27 02:20:19"
+    },
+    "results": [
+      {
+        "platform": "tuniu",
+        "from": "SHA",
+        "to": "SZX",
+        "date": "2026-10-05",
+        "price": 590.0,
+        "airline": "南航",
+        "flight_no": "CZ3590",
+        "depart_time": "07:55",
+        "arrive_time": "10:15",
+        "fetched_at": "2026-09-27 02:17:37"
+      },
+      {
+        "platform": "tongcheng",
+        "from": "SHA",
+        "to": "SZX",
+        "date": "2026-10-05",
+        "price": 520.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-09-27 02:18:40"
+      },
+      {
+        "platform": "tuniu",
+        "from": "SZX",
+        "to": "SHA",
+        "date": "2026-10-06",
+        "price": 927.0,
+        "airline": "吉祥",
+        "flight_no": "HO1890",
+        "depart_time": "07:30",
+        "arrive_time": "09:50",
+        "fetched_at": "2026-09-27 02:19:47"
+      },
+      {
+        "platform": "qunar",
+        "from": "SZX",
+        "to": "SHA",
+        "date": "2026-10-06",
+        "price": 955.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-09-27 02:19:57"
+      },
+      {
+        "platform": "tongcheng",
+        "from": "SZX",
+        "to": "SHA",
+        "date": "2026-10-06",
+        "price": 955.0,
+        "airline": "",
+        "flight_no": "",
+        "depart_time": "",
+        "arrive_time": "",
+        "fetched_at": "2026-09-27 02:20:19"
+      }
+    ],
+    "summary": [
+      {
+        "from": "SHA",
+        "to": "SZX",
+        "date": "2026-10-05",
+        "per_platform": {
+          "tuniu": 590.0,
+          "tongcheng": 520.0
+        },
+        "min_price": 520.0,
+        "best_platform": "tongcheng",
+        "best_flight": "",
+        "best_depart_time": "",
+        "best_arrive_time": ""
+      },
+      {
+        "from": "SZX",
+        "to": "SHA",
+        "date": "2026-10-06",
+        "per_platform": {
+          "tuniu": 927.0,
+          "qunar": 955.0,
+          "tongcheng": 955.0
+        },
+        "min_price": 927.0,
+        "best_platform": "tuniu",
+        "best_flight": "吉祥HO1890",
+        "best_depart_time": "07:30",
+        "best_arrive_time": "09:50"
+      }
+    ],
+    "trend": {
+      "2026-10-05": {
+        "tuniu": [
+          {
+            "t": "2026-09-27 02:17:37",
+            "v": 590.0
+          }
+        ],
+        "tongcheng": [
+          {
+            "t": "2026-09-27 02:18:40",
+            "v": 520.0
+          }
+        ]
+      },
+      "2026-10-06": {
+        "tuniu": [
+          {
+            "t": "2026-09-27 02:19:47",
+            "v": 927.0
+          }
+        ],
+        "qunar": [
+          {
+            "t": "2026-09-27 02:19:57",
+            "v": 955.0
+          }
+        ],
+        "tongcheng": [
+          {
+            "t": "2026-09-27 02:20:19",
+            "v": 955.0
+          }
+        ]
+      }
+    },
+    "generated_at": "2026-09-27T02:20:30.459507Z"
+  }
+}
